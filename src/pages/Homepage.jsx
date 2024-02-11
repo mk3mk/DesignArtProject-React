@@ -83,34 +83,34 @@ const Homepage = () => {
        <div className="border-bottom lh-1 py-3">
          <div className="row flex-nowrap justify-content-between align-items-center">
            <div className="col-4 pt-1">
-             <a className="link-secondary" href="#">Subscribe</a>
+             <a className="link-secondary" href="/">Subscribe</a>
            </div>
            <div className="col-4 text-center">
-             <a className="blog-header-logo blog-div-logo text-body-emphasis text-decoration-none" href="#">Large</a>
+             <a className="blog-header-logo blog-div-logo text-body-emphasis text-decoration-none" href="/">Large</a>
            </div>
            <div className="col-4 d-flex justify-content-end align-items-center">
-             <a className="link-secondary" href="#" aria-label="Search">
+             <a className="link-secondary" href="/" aria-label="Search">
                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
              </a>
-             <a className="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+             <a className="btn btn-sm btn-outline-secondary" href="/">Sign up</a>
            </div>
          </div>
        </div>
      
        <div className="nav-scroller py-1 mb-3 border-bottom">
          <nav className="nav nav-underline justify-content-between">
-           <a className="nav-item nav-link link-body-emphasis active" href="#">World</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">U.S.</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Technology</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Design</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Culture</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Business</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Politics</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Opinion</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Science</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Health</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Style</a>
-           <a className="nav-item nav-link link-body-emphasis" href="#">Travel</a>
+           <a className="nav-item nav-link link-body-emphasis active" href="/">World</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">U.S.</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Technology</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Design</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Culture</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Business</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Politics</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Opinion</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Science</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Health</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Style</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/">Travel</a>
          </nav>
        </div>
      </div>
@@ -120,10 +120,10 @@ const Homepage = () => {
          <div className="col col-lg-6 px-0">
            <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
            <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-           <p className="lead mb-0"><a href="#" className="text-body-emphasis fw-bold">Continue reading...</a></p>
+           <p className="lead mb-0"><a href="/" className="text-body-emphasis fw-bold">Continue reading...</a></p>
          </div>
          <div className="col col-lg-6 px-0">
-           <p className="lead mb-0"><a href="#" className="text-body-emphasis fw-bold">Continue reading...</a></p>
+           <p className="lead mb-0"><a href="/" className="text-body-emphasis fw-bold">Continue reading...</a></p>
          </div>
        </div>
      
@@ -135,7 +135,7 @@ const Homepage = () => {
                <h3 className="mb-0">Featured post</h3>
                <div className="mb-1 text-body-secondary">Nov 12</div>
                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+               <a href="/" className="icon-link gap-1 icon-link-hover stretched-link">
                  Continue reading
      
                </a>
@@ -152,7 +152,7 @@ const Homepage = () => {
                <h3 className="mb-0">Post title</h3>
                <div className="mb-1 text-body-secondary">Nov 11</div>
                <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-               <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+               <a href="/" className="icon-link gap-1 icon-link-hover stretched-link">
                  Continue reading
      
                </a>
@@ -174,7 +174,7 @@ const Homepage = () => {
      
            <div className="blog-post">
              <h2 className="display-5 link-body-emphasis mb-1">Another blog post</h2>
-             <p className="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+             <p className="blog-post-meta">December 23, 2020 by <a href="/">Jacob</a></p>
      
              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
              <blockquote>
@@ -222,7 +222,7 @@ const Homepage = () => {
      
            <div className="blog-post">
              <h2 className="display-5 link-body-emphasis mb-1">New feature</h2>
-             <p className="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+             <p className="blog-post-meta">December 14, 2020 by <a href="/">Chris</a></p>
      
              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
              <ul>
@@ -234,7 +234,7 @@ const Homepage = () => {
            </div>
      
            <nav className="blog-pagination" aria-label="Pagination">
-             <a className="btn btn-outline-primary rounded-pill" href="#">Older</a>
+             <a className="btn btn-outline-primary rounded-pill" href="/">Older</a>
              <a className="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
            </nav>
      
@@ -251,7 +251,7 @@ const Homepage = () => {
                <h4 className="fst-italic">Recent posts</h4>
                <ul className="list-unstyled">
                  <li>
-                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="/">
                      <svg className="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                      <div className="col-lg-8">
                        <h6 className="mb-0">Example blog post title</h6>
@@ -260,7 +260,7 @@ const Homepage = () => {
                    </a>
                  </li>
                  <li>
-                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="/">
                      <svg className="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                      <div className="col-lg-8">
                        <h6 className="mb-0">This is another blog post title</h6>
@@ -269,7 +269,7 @@ const Homepage = () => {
                    </a>
                  </li>
                  <li>
-                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="/">
                      <svg className="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                      <div className="col-lg-8">
                        <h6 className="mb-0">Longer blog post title: This one has multiple lines!</h6>
@@ -283,27 +283,27 @@ const Homepage = () => {
              <div className="p-4">
                <h4 className="fst-italic">Archives</h4>
                <ol className="list-unstyled mb-0">
-                 <li><a href="#">March 2021</a></li>
-                 <li><a href="#">February 2021</a></li>
-                 <li><a href="#">January 2021</a></li>
-                 <li><a href="#">December 2020</a></li>
-                 <li><a href="#">November 2020</a></li>
-                 <li><a href="#">October 2020</a></li>
-                 <li><a href="#">September 2020</a></li>
-                 <li><a href="#">August 2020</a></li>
-                 <li><a href="#">July 2020</a></li>
-                 <li><a href="#">June 2020</a></li>
-                 <li><a href="#">May 2020</a></li>
-                 <li><a href="#">April 2020</a></li>
+                 <li><a href="/">March 2021</a></li>
+                 <li><a href="/">February 2021</a></li>
+                 <li><a href="/">January 2021</a></li>
+                 <li><a href="/">December 2020</a></li>
+                 <li><a href="/">November 2020</a></li>
+                 <li><a href="/">October 2020</a></li>
+                 <li><a href="/">September 2020</a></li>
+                 <li><a href="/">August 2020</a></li>
+                 <li><a href="/">July 2020</a></li>
+                 <li><a href="/">June 2020</a></li>
+                 <li><a href="/">May 2020</a></li>
+                 <li><a href="/">April 2020</a></li>
                </ol>
              </div>
      
              <div className="p-4">
                <h4 className="fst-italic">Elsewhere</h4>
                <ol className="list-unstyled">
-                 <li><a href="#">GitHub</a></li>
-                 <li><a href="#">Twitter</a></li>
-                 <li><a href="#">Facebook</a></li>
+                 <li><a href="/">GitHub</a></li>
+                 <li><a href="/">Twitter</a></li>
+                 <li><a href="/">Facebook</a></li>
                </ol>
              </div>
            </div>
@@ -315,7 +315,7 @@ const Homepage = () => {
      <div className="py-5 text-center text-body-secondary bg-body-tertiary">
        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
        <p className="mb-0">
-         <a href="#">Back to top</a>
+         <a href="/">Back to top</a>
        </p>
      </div>
      
