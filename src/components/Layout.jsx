@@ -1,15 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import { CustomLink } from './CustomLink'
+import { Header } from './Header'
 
 const Layout = () => {
     return (
         <>
-        <header>
-            <CustomLink to="/">Home</CustomLink>
-            <CustomLink to="/posts">Blog</CustomLink>
-            <CustomLink to="/about">About</CustomLink>
-            <CustomLink to="/contacts">Contacts</CustomLink>
-        </header>
+
+        <Header />
 
         <main className="container">
             <Outlet />
