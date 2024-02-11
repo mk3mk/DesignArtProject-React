@@ -8,6 +8,7 @@ const Layout = () => {
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/posts">Blog</CustomLink>
             <CustomLink to="/about">About</CustomLink>
+            <CustomLink to="/contacts">Contacts</CustomLink>
         </header>
 
         <main className="container">

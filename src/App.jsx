@@ -2,7 +2,10 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { Homepage } from './pages/Homepage';
 import { About } from './pages/Aboutpage';
+import { Our_contacts } from './pages/Our_contacts';
+import { Our_team } from './pages/Our_team';
 import { Blogpage } from './pages/Blogpage';
+import { Contacts } from './pages/Contacts';
 import { Createpost } from './pages/Createpost';
 import { Editpost } from './pages/Editpost';
 import { Singlepage } from './pages/Singlepage';
@@ -21,11 +24,12 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="about" element={<About />}>
-            <Route path="contacts" element={<p>Our contact</p>} />
-            <Route path="team" element={<p>Our team</p>} />
+            <Route path="about/our_contacts" element={<Our_contacts />} />
+            <Route path="about/our_team" element={<Our_team />} />
           </Route>
           <Route path="about-us" element={<Navigate to="/about" replace />} />
           <Route path="posts" element={<Blogpage />} />
+          <Route path="contacts" element={<Contacts />} />
           <Route path="posts/:id" element={<Singlepage />} />
           <Route path="posts/:id/edit" element={<Editpost />} />
           <Route path="posts/new" element={
