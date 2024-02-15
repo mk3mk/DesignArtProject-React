@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Homepage } from './pages/Homepage';
 import { About } from './pages/Aboutpage';
 import { Our_contacts } from './pages/Our_contacts';

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 :root {
   --color-bg: #2C2C32;
   --color-active: #0f7dc6;
@@ -64,19 +69,19 @@ h1, h2, h3, h4, h5, h6 {
   top: 2rem;
   position: sticky!important;
 }
-
+/*
 .row{
   border:px solid #f9f9f8;
   margin: 10px 0px;
   padding: 10px 0px;
-  /* background-color: var(--color-secondary); */
+  background-color: var(--color-secondary);
   border-radius: 10px;
 }
 .col{
   border:px solid #fff;
   border-radius: 10px;
 }
-
+*/
 .header-row{
   height: 70vh;
   background: url('sochetanie-sinego-365.png');

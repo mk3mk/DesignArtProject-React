@@ -1,47 +1,10 @@
-
-
-
-.App {
-  font-family: sans-serif;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex > div {
-  margin: 0 1rem 2rem 1rem;
-  text-align: center;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
-}
-
-.media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-
-
-/**/
-
-
-
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- :root {
+:root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
