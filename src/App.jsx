@@ -4,6 +4,10 @@ import { Homepage } from './pages/Homepage';
 import { About } from './pages/Aboutpage';
 import { Our_contacts } from './pages/Our_contacts';
 import { Our_team } from './pages/Our_team';
+import { Panel1 } from './pages/Panel1';
+import { Panel2 } from './pages/Panel2';
+import { Panel3 } from './pages/Panel3';
+
 import { Blogpage } from './pages/Blogpage';
 import { Storepage } from './pages/Storepage';
 import { Contacts } from './pages/Contacts';
@@ -31,7 +35,11 @@ function App() {
           <Route path="about-us" element={<Navigate to="/about" replace />} />
           <Route path="posts" element={<Blogpage />} />
           <Route path="storepage" element={<Storepage />} />
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="contacts" element={<Contacts />} >
+            <Route path="contacts/panel1" element={<Panel1 />} />
+            <Route path="contacts/panel2" element={<Panel2 />} />
+            <Route path="contacts/panel3" element={<Panel3 />} />
+          </Route>
           <Route path="posts/:id" element={<Singlepage />} />
           <Route path="posts/:id/edit" element={<Editpost />} />
           <Route path="posts/new" element={

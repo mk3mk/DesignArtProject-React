@@ -1,4 +1,4 @@
-
+import { Outlet, Link } from 'react-router-dom';
 
 const Contacts = () => {
 
@@ -277,28 +277,25 @@ const Contacts = () => {
           <hr/>
         </div>
         <div className="col-md-6 col-12">
+
+
           <h3>Our Services</h3>
-          <nav>
-            <div className="nav nav-tabs" id="nav-tab" role="tablist">
-              <a className="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Panel 1</a>
-              <a className="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Panel 2</a>
-              <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Panel 3</a>
-            </div>
-          </nav>
-          <div className="tab-content" id="nav-tabContent">
-            <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <p className="text-center mt-2"><img src="https://api.designartproject.ru/images/3b536b.gif" alt=""/></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
-            </div>
-            <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <p className="text-center mt-2"><img src="https://api.designartproject.ru/images/3b536b.gif" alt=""/></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
-            </div>
-            <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-              <p className="text-center mt-2"><img src="https://api.designartproject.ru/images/3b536b.gif" alt=""/></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
-            </div>
-          </div>
+
+
+
+
+
+
+
+          <ul className='d-flex p-2'>
+                <li><Link to="contacts/panel1">Panel1</Link></li>
+                <li><Link to="contacts/panel2">Panel2</Link></li>
+                <li><Link to="contacts/panel3">Panel3</Link></li>
+          </ul>
+
+          <Outlet />
+
+
         </div>
       </div>
     </div>
