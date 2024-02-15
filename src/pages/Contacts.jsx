@@ -288,9 +288,9 @@ const Contacts = () => {
 
 
           <ul className='d-flex p-2'>
-                <li><Link to="contacts/panel1">Panel1</Link></li>
-                <li><Link to="contacts/panel2">Panel2</Link></li>
-                <li><Link to="contacts/panel3">Panel3</Link></li>
+                <li className='m-3'><Link to="contacts/panel1">Panel1</Link></li>
+                <li className='m-3'><Link to="contacts/panel2">Panel2</Link></li>
+                <li className='m-3'><Link to="contacts/panel3">Panel3</Link></li>
           </ul>
 
           <Outlet />
