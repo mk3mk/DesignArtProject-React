@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-blog-03/static/css/main.52ec9f45.css",
-    "main.js": "/react-blog-03/static/js/main.5cf953fc.js",
+    "main.js": "/react-blog-03/static/js/main.6d10de88.js",
     "static/media/sochetanie-sinego-365.png": "/react-blog-03/static/media/sochetanie-sinego-365.78fa5105050c6890639d.png",
     "index.html": "/react-blog-03/index.html",
     "main.52ec9f45.css.map": "/react-blog-03/static/css/main.52ec9f45.css.map",
-    "main.5cf953fc.js.map": "/react-blog-03/static/js/main.5cf953fc.js.map"
+    "main.6d10de88.js.map": "/react-blog-03/static/js/main.6d10de88.js.map"
   },
   "entrypoints": [
     "static/css/main.52ec9f45.css",
-    "static/js/main.5cf953fc.js"
+    "static/js/main.6d10de88.js"
   ]
 }
