@@ -5,6 +5,7 @@ import { About } from './pages/Aboutpage';
 import { Our_contacts } from './pages/Our_contacts';
 import { Our_team } from './pages/Our_team';
 import { Blogpage } from './pages/Blogpage';
+import { Storepage } from './pages/Storepage';
 import { Contacts } from './pages/Contacts';
 import { Createpost } from './pages/Createpost';
 import { Editpost } from './pages/Editpost';
@@ -29,6 +30,7 @@ function App() {
           </Route>
           <Route path="about-us" element={<Navigate to="/about" replace />} />
           <Route path="posts" element={<Blogpage />} />
+          <Route path="storepage" element={<Storepage />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="posts/:id" element={<Singlepage />} />
           <Route path="posts/:id/edit" element={<Editpost />} />

@@ -66,14 +66,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .row{
-  border:1px solid #f9f9f8;
+  border:px solid #f9f9f8;
   margin: 10px 0px;
   padding: 10px 0px;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
   border-radius: 10px;
 }
 .col{
-  border:1px solid #fff;
+  border:px solid #fff;
   border-radius: 10px;
 }
 
