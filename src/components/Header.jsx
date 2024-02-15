@@ -27,6 +27,7 @@ const Header = () => {
            <a className="nav-item nav-link link-body-emphasis active" href="/">Home</a>
            <a className="nav-item nav-link link-body-emphasis" href="/posts">Blog</a>
            <a className="nav-item nav-link link-body-emphasis" href="/about">About</a>
+           <a className="nav-item nav-link link-body-emphasis" href="/storepage">Store</a>
            <a className="nav-item nav-link link-body-emphasis" href="/contacts">Contacts</a>
          </nav>
        </div>
