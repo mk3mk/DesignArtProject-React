@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +30,7 @@ const Storepage = () => {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img className="d-block w-100" src="https://api.designartproject.ru/images/wallpaperflare-1920x500-01.jpg" alt="First slide" />
+                <img className="d-block w-100" src="https://api.designartproject.ru/images/1920x500-01-SynergyCRM-01.png" alt="First slide" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Item 1 Heading</h5>
                   <p>Item 1 Description</p>
@@ -109,9 +110,9 @@ const Storepage = () => {
       <div className="row text-center">
         <div className="col-md-4 pb-1 pb-md-0">
           <div className="card">
-            <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap" />
+            <img className="card-img-top" src="https://api.designartproject.ru/images/400x200-01-Adlowcost.png" alt="Card image cap" />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Adlowcost</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" className="btn btn-primary">Add to Cart</a>
             </div>
@@ -119,9 +120,9 @@ const Storepage = () => {
         </div>
         <div className="col-md-4 pb-1 pb-md-0">
           <div className="card">
-            <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap" />
+            <img className="card-img-top" src="https://api.designartproject.ru/images/400x200-02-SGF.png" alt="Card image cap" />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Synergy Global Forum</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" className="btn btn-primary">Add to Cart</a>
             </div>
@@ -180,10 +181,11 @@ const Storepage = () => {
 
 
 
-    
-    <div className="container">
+
+    <div className="container align-items-center">
       <div className="row text-center">
-        <div className="col-md-12 pb-1 pb-md-0">
+      <div className="col-md-2 pb-1 pb-md-0"></div>
+        <div className="col-md-8 pb-1 pb-md-0">
     <Form>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
@@ -236,6 +238,7 @@ const Storepage = () => {
       </Button>
     </Form>
     </div>
+    <div className="col-md-2 pb-1 pb-md-0"></div>
       </div>
     </div>
 
