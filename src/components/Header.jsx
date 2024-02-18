@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -24,7 +25,7 @@ const Header = () => {
              <a className="link-secondary" href="/" aria-label="Search">
                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
              </a>
-             <a className="btn btn-sm btn-outline-secondary" href="/">Sign up</a>
+             <a className="btn btn-sm btn-outline-secondary" href="/login">Sign up</a>
            </div>
          </div>
        </div>
@@ -32,19 +33,19 @@ const Header = () => {
 
 
      
-       {/* 
+
        
        <div className="nav-scroller py-1 mb-3 border-bottom">
          <nav className="nav nav-underline justify-content-between">
-           <a className="nav-item nav-link link-body-emphasis active" href="/">Home</a>
-           <a className="nav-item nav-link link-body-emphasis" href="/posts">Blog</a>
-           <a className="nav-item nav-link link-body-emphasis" href="/about">About</a>
-           <a className="nav-item nav-link link-body-emphasis" href="/storepage">Store</a>
-           <a className="nav-item nav-link link-body-emphasis" href="/contacts">Contacts</a>
+           <Link className="nav-item nav-link link-body-emphasis active" to="/">Home</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/posts">Blog</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/about">About</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/storepage">Store</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/contacts">Contacts</Link>
          </nav>
        </div>
        
-       */}
+
 
 
 

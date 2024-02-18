@@ -67,12 +67,14 @@ const Layout = () => {
             
             
             
+    <div className="row">
+            <div className="col-12">
+                <p>&copy; ReactRouter Tutorials 2022</p>
+            </div>
+    </div>
             
             
             
-            
-            
-            &copy; ReactRouter Tutorials 2022
             
             
             </footer>
