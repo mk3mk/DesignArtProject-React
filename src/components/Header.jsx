@@ -1,4 +1,11 @@
 import { CustomLink } from './CustomLink';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Header = () => {
     return (
@@ -21,7 +28,12 @@ const Header = () => {
            </div>
          </div>
        </div>
+
+
+
      
+       {/* 
+       
        <div className="nav-scroller py-1 mb-3 border-bottom">
          <nav className="nav nav-underline justify-content-between">
            <a className="nav-item nav-link link-body-emphasis active" href="/">Home</a>
@@ -31,6 +43,47 @@ const Header = () => {
            <a className="nav-item nav-link link-body-emphasis" href="/contacts">Contacts</a>
          </nav>
        </div>
+       
+       */}
+
+
+
+
+
+       <div className="nav-scroller py-1 mb-3 border-bottom">
+       {['sm'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+          <Container fluid>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-between flex-grow-1 pe-3">
+                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="/posts">Blog</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/storepage">Store</Nav.Link>
+                  <Nav.Link href="/contacts">Contacts</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+       </div>
+
+
+
+
+
     </div>
 
         </>

@@ -24,21 +24,21 @@ const Contacts = () => {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100" src="https://api.designartproject.ru/images/wallpaperflare-1920x500-01.jpg" alt="First slide"/>
+              <img className="d-block w-100" src="https://api.designartproject.ru/images/1920x500-01-SynergyCRM-01.jpg" alt="First slide"/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Item 1 Heading</h5>
                 <p>Item 1 Description</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="https://api.designartproject.ru/images/wallpaperflare-1920x500-02.jpg" alt="Second slide"/>
+              <img className="d-block w-100" src="https://api.designartproject.ru/images/1920x500-02-Shoes-01.jpg" alt="Second slide"/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Item 2 Heading</h5>
                 <p>Item 2 Description</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="https://api.designartproject.ru/images/wallpaperflare-1920x500-03.jpg" alt="Third slide"/>
+              <img className="d-block w-100" src="https://api.designartproject.ru/images/1920x500-03-Adlowcost-02.jpg" alt="Third slide"/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Item 3 Heading</h5>
                 <p>Item 3 Description</p>
@@ -69,7 +69,7 @@ const Contacts = () => {
         <div className="col-lg-4 col-md-6 col-12">
           <ul className="list-unstyled">
             <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100X100.gif" alt="Generic placeholder image" />
+              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-01.jpg" alt="Generic placeholder image" />
               <div className="media-body">
                 <h5 className="mt-0 mb-1">Heading 1</h5>
                 <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
@@ -80,7 +80,7 @@ const Contacts = () => {
         <div className="col-lg-4 col-md-6 col-12">
           <ul className="list-unstyled">
             <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100X100.gif" alt="Generic placeholder image"/>
+              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-02.jpg" alt="Generic placeholder image"/>
               <div className="media-body ">
                 <h5 className="mt-0 mb-1">Heading 2</h5>
                 <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
@@ -91,7 +91,7 @@ const Contacts = () => {
         <div className="col-lg-4 d-md-none d-lg-block">
           <ul className="list-unstyled">
             <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100X100.gif" alt="Generic placeholder image"/>
+              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-03.jpg" alt="Generic placeholder image"/>
               <div className="media-body">
                 <h5 className="mt-0 mb-1">Heading 3</h5>
                 <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
@@ -117,7 +117,7 @@ const Contacts = () => {
         <div className="row">
           <div className="col-sm-6 col-12">
             <div className="card">
-              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap"/>
+              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200-01-shoes-01.jpg" alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -127,7 +127,7 @@ const Contacts = () => {
           </div>
           <div className="col-sm-6 col-12">
             <div className="card">
-              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap"/>
+              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200-02-verstka.jpg" alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -139,7 +139,7 @@ const Contacts = () => {
         <div className="row">
           <div className="col-sm-6 col-12">
             <div className="card">
-              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap"/>
+              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200-03-hamster.jpg" alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -149,7 +149,7 @@ const Contacts = () => {
           </div>
           <div className="col-sm-6 col-12">
             <div className="card">
-              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200.gif" alt="Card image cap"/>
+              <img className="card-img-top" src="https://api.designartproject.ru/images/400X200-04-SGF.jpg" alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

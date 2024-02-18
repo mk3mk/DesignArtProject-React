@@ -1,36 +1,5 @@
 
 
-
-.App {
-  font-family: sans-serif;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex > div {
-  margin: 0 1rem 2rem 1rem;
-  text-align: center;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
-}
-
-.media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-
-
 /**/
 
 
@@ -10259,3 +10228,51 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+
+
+
+
+
+
+
+.App {
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex > div {
+  margin: 0 1rem 2rem 1rem;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.bg-body-secondary{
+  background: url('https://api.designartproject.ru/images/1920x900-03.jpg')!important;
+  background-size: cover!important;
+  background-position: 100% 100%!important;
+  color: #fff!important;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  padding: 0!important;
+  margin: 0
+}

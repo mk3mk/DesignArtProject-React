@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="about" element={<About />}>
-            <Route path="about/our_contacts" element={<Our_contacts />} />
+            <Route index path="about/our_contacts" element={<Our_contacts />} />
             <Route path="about/our_team" element={<Our_team />} />
           </Route>
           <Route path="about-us" element={<Navigate to="/about" replace />} />

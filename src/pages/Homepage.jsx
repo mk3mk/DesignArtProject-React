@@ -83,13 +83,13 @@ const Homepage = () => {
      
      <div className="container">
        <div className="p-4 row p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-         <div className="col col-lg-6 px-0">
+         <div className="col-lg-6 col-md-12 px-0">
            <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
            <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
            <p className="lead mb-0"><a href="/" className="text-body-emphasis fw-bold">Continue reading...</a></p>
          </div>
-         <div className="col col-lg-6 px-0">
-           <p className="lead mb-0"><a href="/" className="text-body-emphasis fw-bold">Continue reading...</a></p>
+         <div className="col-lg-6 col-md-12 px-0">
+           
          </div>
        </div>
      
@@ -107,7 +107,7 @@ const Homepage = () => {
                </a>
              </div>
              <div className="col-auto d-none d-lg-block">
-               <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+             <img className="mr-3" width="200" src="https://api.designartproject.ru/images/200x250-01.jpg" alt="Generic placeholder image" />
              </div>
            </div>
          </div>
@@ -124,7 +124,7 @@ const Homepage = () => {
                </a>
              </div>
              <div className="col-auto d-none d-lg-block">
-               <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+             <img className="mr-3" width="200" src="https://api.designartproject.ru/images/200x250-02.jpg" alt="Generic placeholder image" />
              </div>
            </div>
          </div>
