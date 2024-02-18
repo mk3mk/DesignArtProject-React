@@ -33,7 +33,7 @@ const Header = () => {
 
 
      
-
+{/* 
        
        <div className="nav-scroller py-1 mb-3 border-bottom">
          <nav className="nav nav-underline justify-content-between">
@@ -45,7 +45,7 @@ const Header = () => {
          </nav>
        </div>
        
-
+ */}
 
 
 
@@ -68,11 +68,19 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-between flex-grow-1 pe-3">
-                  <Nav.Link href="/home">Home</Nav.Link>
+
+                  {/* <Nav.Link href="/home">Home</Nav.Link>
                   <Nav.Link href="/posts">Blog</Nav.Link>
                   <Nav.Link href="/about">About</Nav.Link>
                   <Nav.Link href="/storepage">Store</Nav.Link>
-                  <Nav.Link href="/contacts">Contacts</Nav.Link>
+                  <Nav.Link href="/contacts">Contacts</Nav.Link> */}
+
+           <Link className="nav-item nav-link link-body-emphasis active" to="/">Home</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/posts">Blog</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/about">About</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/storepage">Store</Link>
+           <Link className="nav-item nav-link link-body-emphasis" to="/contacts">Contacts</Link>
+
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
