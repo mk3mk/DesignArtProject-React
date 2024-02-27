@@ -10276,3 +10276,8 @@ img {
   padding: 0!important;
   margin: 0
 }
+
+.poster{
+  width: 100px;
+  border-radius: 20px;
+}

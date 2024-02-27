@@ -1,6 +1,26 @@
+import * as React from "react";
+
 import { Outlet, Link } from 'react-router-dom';
 
 const Contacts = () => {
+
+
+
+
+
+  const [posts, setPosts] = React.useState([]);
+
+  React.useEffect(() => {
+      fetch('http://127.0.0.1:8025/posts')
+          .then(res => res.json())
+          .then(data => setPosts(data))
+  }, []);
+
+
+
+ 
+
+
 
 
   return (
@@ -60,7 +80,17 @@ const Contacts = () => {
   </div>
 
 
-
+        <div>00000000
+        <h1>Our news</h1>
+            {
+                posts.map(post => (
+                    <Link key={post.id} to={`/posts/${post.id}`}>
+                        <li>{post.title}</li>
+                        <li><img className="poster" src={post.poster} /></li>
+                    </Link>
+                ))
+            }
+        </div>
 
 
   <section>
