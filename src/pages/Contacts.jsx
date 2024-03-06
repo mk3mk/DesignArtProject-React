@@ -1,6 +1,7 @@
 import * as React from "react";
-
 import { Outlet, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage, faHeart, faList } from '@fortawesome/free-solid-svg-icons';
 
 const Contacts = () => {
 
@@ -11,7 +12,7 @@ const Contacts = () => {
   const [posts, setPosts] = React.useState([]);
 
   React.useEffect(() => {
-      fetch('http://127.0.0.1:8025/posts')
+      fetch('https://api.designartproject.ru/posts/')
           .then(res => res.json())
           .then(data => setPosts(data))
   }, []);
@@ -80,55 +81,35 @@ const Contacts = () => {
   </div>
 
 
-        <div>00000000
-        <h1>Our news</h1>
-            {
-                posts.map(post => (
-                    <Link key={post.id} to={`/posts/${post.id}`}>
-                        <li>{post.title}</li>
-                        <li><img className="poster" src={post.poster} /></li>
-                    </Link>
-                ))
-            }
-        </div>
+
+
+
+
+
 
 
   <section>
     <div className="container">
       <div className="row">
-        <div className="col-lg-4 col-md-6 col-12">
+
+      {posts.slice(0, 3).map(post => (
+
+        <div key={post.id} className="col-lg-4 col-md-6 col-12">
           <ul className="list-unstyled">
             <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-01.jpg" alt="Generic placeholder image" />
+              <img className="mr-3 rounded-circle" src={post.poster100x100} alt="Generic placeholder image" />
               <div className="media-body">
-                <h5 className="mt-0 mb-1">Heading 1</h5>
-                <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+<Link to={`/posts/${post.id}`}>
+                <h5 className="mt-0 mb-1"><FontAwesomeIcon icon={faHeart} className="mr-2" />{post.title}</h5>
+                <p className="mb-0">{post.body}</p>
+</Link>
               </div>
             </li>
           </ul>
         </div>
-        <div className="col-lg-4 col-md-6 col-12">
-          <ul className="list-unstyled">
-            <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-02.jpg" alt="Generic placeholder image"/>
-              <div className="media-body ">
-                <h5 className="mt-0 mb-1">Heading 2</h5>
-                <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="col-lg-4 d-md-none d-lg-block">
-          <ul className="list-unstyled">
-            <li className="media">
-              <img className="mr-3 rounded-circle" src="https://api.designartproject.ru/images/100x100-03.jpg" alt="Generic placeholder image"/>
-              <div className="media-body">
-                <h5 className="mt-0 mb-1">Heading 3</h5>
-                <p className="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+
+      ))}
+
       </div>
     </div>
   </section>
@@ -199,10 +180,10 @@ const Contacts = () => {
       <div className="col-lg-4 col-12">
         <div className="row mx-0">
           <div className="col-12 card bg-light mx-auto">
-            <h3 className="text-center card-header">Find Your Home</h3>
+            <h3 className="text-center card-header">Send a request</h3>
             <form className="card-body">
               <div className="form-group row">
-                <label for="location1" className="col-form-label">Location</label>
+                <label for="location1" className="col-form-label">Your Name</label>
                 <select className="form-control" name="location" id="location1">
                   <option value="">Any</option>
                   <option value="">1</option>
@@ -267,41 +248,41 @@ const Contacts = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-12">
-          <h3>New Properties</h3>
+          <h3>Technologies Used</h3>
           <hr/>
           <div className="row">
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/> </div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-01.jpg" alt="Thumbnail Image 1"/> </div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-02.jpg" alt="Thumbnail Image 1"/></div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-03.jpg" alt="Thumbnail Image 1"/></div>
             </div>
           </div>
           <hr/>
           <div className="row">
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-04.jpg" alt="Thumbnail Image 1"/></div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-05.jpg" alt="Thumbnail Image 1"/></div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-06.jpg" alt="Thumbnail Image 1"/></div>
             </div>
           </div>
           <hr/>
           <div className="row">
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-07.jpg" alt="Thumbnail Image 1"/></div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-08.jpg" alt="Thumbnail Image 1"/></div>
             </div>
             <div className="col-4">
-              <div className="text-center"> <img src="https://api.designartproject.ru/images/72X72.gif" alt="Thumbnail Image 1"/></div>
+              <div className="text-center"> <img src="https://api.designartproject.ru/images/100x100-09.jpg" alt="Thumbnail Image 1"/></div>
             </div>
           </div>
           <hr/>
@@ -350,8 +331,9 @@ const Contacts = () => {
           <div className="col-lg-6 col-12">
             <h3>About Us</h3>
             <hr/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, consequatur neque exercitationem distinctio esse! Cupiditate doloribus a consequatur iusto illum eos facere vel iste iure maxime. Velit, rem, sunt obcaecati eveniet id nemo molestiae. In.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, consequatur neque exercitationem distinctio esse! Cupiditate doloribus a consequatur iusto illum eos facere vel iste iure maxime. Velit, rem, sunt obcaecati eveniet id nemo molestiae. In.</p>
+            <p>It is important to remember that web development is not only a technical process, but also a creative one. A successful web developer must have good taste and a sense of style in order to create attractive and functional websites.</p>
+            <p>
+            Overall, web development is an exciting and dynamic process that is constantly changing and evolving. For a successful career in this field, you need to be ready for constant learning and self-improvement.</p>
           </div>
           <div className="col-lg-6 col-12">
             <h3>Latest News</h3>
@@ -361,12 +343,12 @@ const Contacts = () => {
             <div className="media-body">
               <h4 className="mt-0 mb-1">Heading 1</h4>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quod temporibus veniam deserunt deleniti accusamus voluptatibus at illo sunt quisquam. </div>
-            <a href="#"><img className="ml-3" src="https://api.designartproject.ru/images/75X.gif" alt="placeholder image"/></a> </div>
+            <a href="#"><img className="ml-3" src="https://api.designartproject.ru/images/100x100-03.jpg" alt="placeholder image"/></a> </div>
           <div className="media">
             <div className="media-body">
               <h4 className="mt-0 mb-1">Heading 2</h4>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, iure nemo earum quae aliquid animi eligendi rerum rem porro facilis. </div>
-            <a href="#"><img className="ml-3" src="https://api.designartproject.ru/images/75X.gif" alt="placeholder image"/></a> </div>
+            <a href="#"><img className="ml-3" src="https://api.designartproject.ru/images/100x100-07.jpg" alt="placeholder image"/></a> </div>
         </div>
           </div>
         </div>

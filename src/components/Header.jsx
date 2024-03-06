@@ -22,8 +22,8 @@ const Header = () => {
            </div>
            <div className="col-4 text-center">
              <Link className="blog-header-logo blog-div-logo text-body-emphasis text-decoration-none" to="/">
-              DesignArtProject
-             </Link>
+             DesignArtProject
+            </Link>
            </div>
            <div className="col-4 d-flex justify-content-end align-items-center">
              <a className="link-secondary" href="/" aria-label="Search">
@@ -36,7 +36,7 @@ const Header = () => {
 
 
 
-     
+
 {/* 
        
        <div className="nav-scroller py-1 mb-3 border-bottom">

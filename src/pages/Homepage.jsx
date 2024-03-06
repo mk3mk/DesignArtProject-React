@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMessage, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faMessage, faHeart, faList } from '@fortawesome/free-solid-svg-icons';
+
+import Button from 'react-bootstrap/Button';
 
 const Homepage = () => {
   const [posts, setPosts] = useState([]);
@@ -159,7 +161,7 @@ const Homepage = () => {
 
 
       <div className="row mb-2">
-        {posts.map((post) => (
+        {posts.slice(0,4).map((post) => (
           <div key={post.id} to={`/posts/${post.id}`} className="col-md-6">
             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static mr-1">
@@ -198,7 +200,7 @@ const Homepage = () => {
 
 
 
-
+      <Button variant="primary">More...</Button>
 
 
 
@@ -293,8 +295,10 @@ const Homepage = () => {
 
 
 
+<div className="separator">
+  <img width="100%" src="https://api.designartproject.ru/images/designartproject-02.png" alt="" />
+</div>
 
-<img width="100%" src="https://api.designartproject.ru/images/designartproject-02.png" alt="" />
 
         <div className="row g-5">
           <div className="col-md-8">
@@ -307,15 +311,12 @@ const Homepage = () => {
                 Another blog post
               </h2>
               <p className="blog-post-meta">
+                <FontAwesomeIcon icon={faList} className="mr-2"/>
                 December 23, 2020 by <a href="/">Jacob</a>
               </p>
 
               <p>
-                This is some additional paragraph placeholder content. It has
-                been written to fill the available space and show how a longer
-                snippet of text affects the surrounding content. We'll repeat it
-                often to keep the demonstration flowing, so be on the lookout
-                for this exact same string of text.
+                  An important aspect of web development is choosing the right tools and technologies. Among them are various frameworks and libraries that simplify and speed up the development process. In addition, it is necessary to keep up with the latest trends and innovations in the world of web technologies in order to be aware of all changes and improvements.
               </p>
               <blockquote>
                 <p>

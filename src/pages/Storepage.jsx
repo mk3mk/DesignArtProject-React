@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faSquareCheck, faCoffee, faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 import Table from 'react-bootstrap/Table';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -9,15 +9,61 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-
-
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 const Storepage = () => {
+
+
+  useEffect(() => {
+
+    new WOW.WOW({
+        live: false
+    }).init();
+
+}, []);
+
+var settings1 = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 2300,
+  cssEase: 'linear',
+  fade: false,
+  lazyLoad: true,
+};
+
+
+var settings2 = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 2000,
+  cssEase: 'linear',
+  fade: false,
+  lazyLoad: true,
+};
+
+
     return (
         <div>
             <h1>Storepage</h1>
-    <div className="container mt-3">
+
+
+
+
+
+    {/* <div className="container mt-3">
       <div className="row">
         <div className="col-12">
           <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
@@ -61,11 +107,60 @@ const Storepage = () => {
         </div>
       </div>
       <hr/>
-    </div>
+    </div> */}
 
 
 
-    <div className="container">
+
+
+
+
+    <p>/// *** slick-slider-1 *** ///</p>
+      <Slider {...settings1}>
+        {' '}
+        {/*  slick  */}
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-01.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-02.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-03.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-04.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-05.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/1920x500-06.jpg"
+            alt=""
+          />
+        </div>
+      </Slider>
+
+
+
+
+      <div className="container my-4">
       <div className="row">
         <div className="col-4">
           <div className="row">
@@ -80,7 +175,7 @@ const Storepage = () => {
         <div className="col-4">
           <div className="row">
             <div className="col-2">
-              <FontAwesomeIcon icon={faCoffee} />
+              <FontAwesomeIcon icon={faSquareCheck} />
             </div>
             <div className="col-lg-6 col-10 ml-1">
               <h4>Free Returns</h4>
@@ -90,7 +185,7 @@ const Storepage = () => {
         <div className="col-4">
           <div className="row">
             <div className="col-2">
-              <FontAwesomeIcon icon={faCoffee} />
+            <FontAwesomeIcon icon={faSquareUpRight} />
             </div>
             <div className="col-lg-6 col-10 ml-1">
               <h4>Low Prices</h4>
@@ -102,13 +197,47 @@ const Storepage = () => {
 
 
 
-
-
-
-
-    
-
-
+      <p>/// *** slick-slider-2 *** ///</p>
+      <Slider {...settings2}>
+        {' '}
+        {/*  slick  */}
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-01.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-02.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-03.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-04.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-05.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://api.designartproject.ru/images/400x200-06.jpg"
+            alt=""
+          />
+        </div>
+      </Slider>
 
 
     <hr />
