@@ -132,16 +132,16 @@ const Homepage = () => {
         <div className="p-4 row p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           <div className="col col-lg-6 px-0">
             <h1 className="display-4 fst-italic">
-              Title of a longer featured blog post
+            Design Art Project
             </h1>
             <p className="lead my-3">
-              Multiple lines of text that form the lede, informing new readers
-              quickly and efficiently about what’s most interesting in this
-              post’s contents.
+            Ensure your visuals are high-quality and well-organized. 
+            Use mockups to showcase designs in realistic settings, 
+            such as displaying a website design on a computer screen.
             </p>
             <p className="lead mb-0">
               <a href="/" className="text-body-emphasis fw-bold">
-                Continue reading...
+                Continue ...
               </a>
             </p>
           </div>
@@ -189,9 +189,7 @@ const Homepage = () => {
                   to={`/cases/${post.id}`}
                   className="icon-link gap-1 icon-link-hover stretched-link"
                 >
-
-                  <li>{post.title}</li>
-                  Continue reading ... 
+                  More ... 
                 </Link>
 
                 

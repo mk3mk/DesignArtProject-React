@@ -18,7 +18,7 @@ const Header = () => {
        <div className="border-bottom lh-1 py-3">
          <div className="row flex-nowrap justify-content-between align-items-center">
            <div className="col-4 pt-1">
-             <Link className="link-secondary" to="/">Subscribe</Link>
+             <Link className="link-secondary" to="/subscribe">Subscribe</Link>
            </div>
            <div className="col-4 text-center">
              <Link className="blog-header-logo blog-div-logo text-body-emphasis text-decoration-none" to="/">

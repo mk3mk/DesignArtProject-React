@@ -17,6 +17,7 @@ import { Editpost } from './pages/Editpost';
 import { Singlepage } from './pages/Singlepage';
 import { Notfoundpage } from './pages/Notfoundpage';
 import { LoginPage } from './pages/Loginpage';
+import { Subscribe } from './pages/Subscribe';
 
 import { Layout } from './components/Layout'
 
@@ -50,6 +51,7 @@ function App() {
             </RequireAuth>
           } />
           <Route path="login" element={<LoginPage />} />
+          <Route path="subscribe" element={<Subscribe />} />
           <Route path="*" element={<Notfoundpage />} />
         </Route>
       </Routes>

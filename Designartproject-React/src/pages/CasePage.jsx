@@ -37,17 +37,17 @@ const CasePage = () => {
 
 
                 <div className="mt-4 mb-3 text-body-secondary">
+
                 <FontAwesomeIcon icon={faMessage} className="mr-2" />
-                <span className="mr-2">{post.comments}</span>
+                <span className="mr-2">{post.owner}</span>
+
                 <FontAwesomeIcon icon={faHeart} className="mr-2"/>
-                <span className="mr-2">34</span>
+                <span className="mr-2">{post.comments}</span>
+
+                <FontAwesomeIcon icon={faList} className="mr-2"/>
+                <span className="mr-2">{post.categories}</span>
+
                 </div>
-
-
-
-                <p><FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.owner}
-                <FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.comments}
-                <FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.categories}</p>
 
 
                 <Link to={`/posts/${id}/edit`}>Edit this post</Link>
