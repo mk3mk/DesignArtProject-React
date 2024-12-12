@@ -91,7 +91,7 @@ const Layout = () => {
             
     <div className="row">
             <div className="col-12">
-                <p>&copy; ReactRouter Tutorials 2022</p>
+                <p>&copy; DesignArtProject 2024</p>
             </div>
     </div>
             

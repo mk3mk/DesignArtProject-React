@@ -1,13 +1,13 @@
-import { useParams } from 'react-router-dom'
+import { SubscribeForm } from './SubscribeForm'
 
 const Subscribe = () => {
-    const {id} = useParams();
-
+    
     return (
         <div>
-            <h1>Subscribe {id}</h1>
+            <h1>Subscribe</h1>
+            <SubscribeForm />
         </div>
     )
 }
 
-export {Subscribe}
+export {Subscribe};
