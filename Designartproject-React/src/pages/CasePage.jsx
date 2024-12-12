@@ -1,5 +1,8 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage, faHeart, faList } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimney, faSailboat, faClipboardList, faBox, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const CasePage = () => {
     const {id} = useParams();
@@ -29,10 +32,28 @@ const CasePage = () => {
               <div className="card-body">
                 <h2 className="card-title">{post.title}</h2>
                 <p className="card-text">{post.body}</p>
-                <button className="btn btn-primary" onClick={goBack}>Go back</button>
+                <button className="btn btn-primary mr-1" onClick={goBack}>Go back</button>
                 <button className="btn btn-primary" onClick={goHome}>Go home</button>
-                <p>{post.owner}/{post.comments}/{post.categories}</p>
+
+
+                <div className="mt-4 mb-3 text-body-secondary">
+                <FontAwesomeIcon icon={faMessage} className="mr-2" />
+                <span className="mr-2">{post.comments}</span>
+                <FontAwesomeIcon icon={faHeart} className="mr-2"/>
+                <span className="mr-2">34</span>
+                </div>
+
+
+
+                <p><FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.owner}
+                <FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.comments}
+                <FontAwesomeIcon icon={faHouseChimney} className="mr-2" />{post.categories}</p>
+
+
                 <Link to={`/posts/${id}/edit`}>Edit this post</Link>
+
+
+
               </div>
             </div>
       </div>
