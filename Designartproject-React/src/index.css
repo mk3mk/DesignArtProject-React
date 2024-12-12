@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+:root {
+  --color-bg: #2C2C32;
+  --color-active: #0f7dc6;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: var(--color-bg);
+  padding: 2rem 0;
+  text-align: center;
+}
+header > a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+header > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  min-height: calc(100vh - 85px - 22px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--color-bg);
+}
+main a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--color-active);
+  cursor: default;
+}
+
+/*******************/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.position-sticky{
+  top: 2rem;
+  position: sticky!important;
+}
+/*
+.row{
+  border:px solid #f9f9f8;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+.col{
+  border:px solid #fff;
+  border-radius: 10px;
+}
+*/
+.header-row{
+  height: 70vh;
+  background: url('sochetanie-sinego-365.png');
+  background-size: contain;
+}
+.separator{
+  margin: 100px 5px;
+}
