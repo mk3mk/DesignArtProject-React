@@ -162,7 +162,7 @@ const Homepage = () => {
 
 
       <div className="row mb-2">
-        {posts.slice(0,4).map((post) => (
+        {posts.slice(0,8).map((post) => (
           <div key={post.id} to={`/cases/${post.id}`} className="col-md-6">
             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static mr-1">
