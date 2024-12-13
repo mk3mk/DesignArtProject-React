@@ -1,0 +1,62 @@
+
+
+Цвета
+
+#6294af
+#71acb0
+#b4dadb
+#f2f1f7
+#b1aecb
+
+
+
+
+deploy on github pages 
+ 
+1. Create an empty repository on GitHub 
+2. $ npx create-react-app my-app 
+3. npm install gh-pages --save-dev 
+4. 
+"homepage": "https://gitname.github.io/react-gh-pages" 
+"homepage": "https://mk3mk.github.io/React-Router-6",
+"homepage": "https://mk3mk.github.io/9596",
+"homepage": "https://mk3mk.github.io/innap",
+"homepage": "https://mk3mk.github.io/react-ts-socialNetwork",
+
+5.  
+"predeploy": "npm run build", 
+"deploy": "gh-pages -d build", 
+6.  
+git remote add origin https://github.com/{username}/{repo-name}.git
+git remote add origin https://github.com/mk3mk/React-Router-6.git
+git remote add origin https://github.com/mk3mk/innap.git
+git remote add origin https://github.com/mk3mk/counter.git
+git remote add origin https://github.com/mk3mk/react-ts-socialNetwork.git
+
+git remote set-url origin https://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@github.com/mk3mk/9596
+git remote set-url origin https://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@github.com/mk3mk/React-Router-6
+git remote set-url origin https://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@github.com/mk3mk/react-03
+
+
+7. npm run deploy
+ 
+git config --global user.email "mk3mk@yandex.ru"
+git config --global user.name "mk3mk"
+
+
+
+ * [new branch]      dev        -> origin/dev
+ * [new branch]      gh-pages   -> origin/gh-pages
+
+
+git add .
+git checkout main
+git commit -m '23232'
+git push
+
+git add . | git checkout dev | git commit -m '111' | git push
+git add . | git checkout main | git commit -m '111' | git push
+
+git checkout gh-pages | npm run deploy
+
+npm run deploy
