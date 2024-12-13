@@ -428,36 +428,24 @@ const Homepage = () => {
                 </p>
               </div>
 
-
-
-
-
-
-
               <div>
                 <h4 className="fst-italic">Recent posts</h4>
 
 
 
-<div>
-   {posts.map((post) => (
-      <div key={post.id} to={`/posts/${post.id}`}>
-        <a
-          className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-          href="/"
-        >
-          <img src={post.poster100x100} />
-          <div className="col-lg-8">
-            <h6 className="mb-0">{post.title}</h6>
-            <small className="text-body-secondary">
-              {post.body}
-            </small>
-          </div>
-        </a>
-      </div>
-      ))}
-</div>
+    {posts.map((post) => (
+        <Link key={post.id} to={`/cases/${post.id}`} className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
 
+            <img src={post.poster100x100} />
+            <div className="col-lg-8">
+              <h6 className="mb-0">{post.title}</h6>
+              <small className="text-body-secondary">
+                {post.body}
+              </small>
+            </div>
+
+        </Link>
+    ))}
 
 
 
