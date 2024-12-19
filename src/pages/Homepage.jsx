@@ -336,7 +336,9 @@ const Homepage = () => {
                 often to keep the demonstration flowing, so be on the lookout
                 for this exact same string of text.
               </p>
-              <h3>Example table</h3>
+
+
+              <h3 className="mt-5">Example table</h3>
               <p>And don't forget about tables in these posts:</p>
               <table className="table">
                 <thead>
@@ -421,11 +423,15 @@ const Homepage = () => {
             <div className="position-sticky">
               <div className="p-4 mb-3 bg-body-tertiary rounded">
                 <h4 className="fst-italic">About</h4>
+                <Link className="nav-item nav-link link-body-emphasis" to="/about">
                 <p className="mb-0">
-                  Customize this section to tell your visitors a little bit
+                  Customize 
+                  this section                
+                  to tell your visitors a little bit
                   about your publication, writers, content, or something else
                   entirely. Totally up to you.
                 </p>
+                </Link>   
               </div>
 
               <div>
@@ -557,11 +563,11 @@ const Homepage = () => {
               <div className="p-4">
                   <h4 className="fst-italic">Archives</h4>
                   {posts.map((post) => (
-                      <div key={post.id} to={`/posts/${post.id}`} className="list-unstyled mb-0">
+                      <Link key={post.id} to={`/cases/${post.id}`} className="list-unstyled mb-0">
                         <li>
-                          <a href="/">{post.title}</a>
+                          {post.title}
                         </li>
-                      </div>
+                      </Link>
                   ))} 
               </div>
 
