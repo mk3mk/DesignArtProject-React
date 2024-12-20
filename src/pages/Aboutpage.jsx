@@ -7,78 +7,28 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import FeedbackForm from './FeedbackForm';
 
 const About = () => {
     return (
         <div>
-            <h1>About us</h1>
-            <p>This is a demo website about React-router-dom library.</p>
-            <ul>
-                <li><Link to="about/our_contacts">Our Contacts</Link></li>
-                <li><Link to="about/our_team">Our Team</Link></li>
-            </ul>
 
-
-
-
-
-
-
-
-
-
-    
-
-            <hr />
-    <h2 className="text-center">FEATURED PRODUCTS</h2>
+        <hr />
+    <h2 className="text-center">LEAVE YOUR FEEDBACK</h2>
+    <p className="text-center">tell us about your impressions</p>
     <hr />
-
 
     <div className="container">
       <div className="row">
         <div className="col">
-        <Form>
-      <Row className="mb-3">
-        <Form.Group as={Col} controlId="formGridName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Name" />
-        </Form.Group>
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-      </Row>
-
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" />
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+          <FeedbackForm /> 
         </div>
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <hr />
-    <h2 className="text-center">RECOMMENDED WORKS</h2>
+    <h2 className="text-center">feedback from our customers</h2>
+    <p className="text-center">we publish your reviews</p>
     <hr />
 
 
