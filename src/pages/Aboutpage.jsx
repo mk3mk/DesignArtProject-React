@@ -17,11 +17,15 @@ const About = () => {
 
   const [posts, setPosts] = useState([]);
 
+
   useEffect(() => {
     fetch("https://api.designartproject.ru/feedbacks/")
       .then((res) => res.json())
       .then((data) => setPosts(data));
   }, []);
+
+
+
 
 
     return (

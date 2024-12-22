@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 
-const FeedbackForm = () => {
+const OrderForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -52,8 +52,8 @@ const FeedbackForm = () => {
             </Row>
 
             <Form.Group className="mb-3">
-                <Form.Label>Feedback</Form.Label>
-                <Form.Control type="textarea" name="comment" value={formData.comment} onChange={handleChange} required placeholder="Feedback" />
+                <Form.Label>Order</Form.Label>
+                <Form.Control type="textarea" name="comment" value={formData.comment} onChange={handleChange} required placeholder="Order" />
             </Form.Group>
 
             <Button variant="primary" type="submit">
@@ -65,4 +65,4 @@ const FeedbackForm = () => {
     );
 };
 
-export default FeedbackForm;
+export default OrderForm;
