@@ -53,7 +53,7 @@ const CasePage = () => {
                 <Link to={`/posts/${id}/edit`}>Edit this post</Link>
 
 
-                <img className="card-img-top" src={post.landing} alt="landing"/>
+                <img className="card-img-top" src={post.landos} alt="landing"/>
 
 
 

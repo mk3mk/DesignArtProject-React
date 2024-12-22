@@ -34,8 +34,14 @@ const About = () => {
 
     <div className="container">
       <div className="row">
-        <div className="col">
+      <div className="col-lg-2 col-sm-12">
+
+      </div>
+        <div className="col-lg-8 col-sm-12">
           <FeedbackForm /> 
+        </div>
+        <div className="col-lg-2 col-sm-12">
+
         </div>
       </div>
     </div>
