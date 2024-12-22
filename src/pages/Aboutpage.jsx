@@ -8,8 +8,22 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import FeedbackForm from './FeedbackForm';
+import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouseChimney, faSailboat, faClipboardList, faUserCircle, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
+
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.designartproject.ru/feedbacks/")
+      .then((res) => res.json())
+      .then((data) => setPosts(data));
+  }, []);
+
+
     return (
         <div>
 
@@ -27,10 +41,9 @@ const About = () => {
     </div>
 
     <hr />
-    <h2 className="text-center">feedback from our customers</h2>
-    <p className="text-center">we publish your reviews</p>
+    <h2 className="text-center">Feedback From Our Customers</h2>
+    <p className="text-center">We publish your reviews</p>
     <hr />
-
 
     <div className="container">
       <div className="row">
@@ -41,30 +54,23 @@ const About = () => {
         <Table striped="columns">
       <thead>
         <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Message</th>
         </tr>
       </thead>
       <tbody>
+
+
+      {posts.map((post) => (
         <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <td><FontAwesomeIcon icon={faUserCircle} size="3x"/></td>
+          <td>{post.name}</td>
+          <td>{post.message}</td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+      ))} 
+
+
       </tbody>
     </Table>
         </div>
